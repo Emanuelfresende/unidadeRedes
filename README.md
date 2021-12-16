@@ -11,7 +11,7 @@ Se seu servidor receber mensagens sem a extensão do campo proposto, o servidor 
 ## Qual o problema considerado?  
 _Justifique a aplicação de sua solução proposta_
 
-> O problema considerado foi a busca de palavras dentro do site do Departamento de Relações Internacionais, onde o usuário informa o url do site e a quantidade de vezes que a palavra aparece, para considerar possiveis correções em seu site, através de uma requisição em http.
+> O problema considerado foi a busca de palavras dentro do site do Departamento de Relações Internacionais da Universidade Federal De Sergipe (UFS), onde o usuário informa o url do site e a quantidade de vezes que a palavra aparece, para considerar possiveis correções em seu site, através de uma requisição em http.
 A aplicação baseada em uma variação do http, o HTTP/Tupi, retorna um formato text/plain de uma  página que o usuário informa pelo seu url. QUando protocolo HTTP/1.1 é chamado, ele retorna a resposta através do arquivo text/html. Caso solicitado pelo HTTP/Tupi, o servidor apontará a resposta da busca com conteudo text/plain.
 
 ## Qual o público alvo?  
