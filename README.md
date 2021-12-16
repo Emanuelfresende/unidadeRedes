@@ -64,4 +64,4 @@ _Descreva como o servidor pode ser implantado e testado, apresentando um manual 
 
 ## Faça um registro do funcionamento de sua aplicação 
 _Apresente um exemplo de teste mostrando que o cliente e o servior  HTTP Tupi funcionou corretamente_
-- A atividade é apresentada no link  https://github.com/Emanuelfresende/unidadeRedes, com o arquivo aplicacaoTCP.pdf que vai demostrar o passo a passo da execução da atividade.
+- A atividade é apresentada no link https://github.com/Emanuelfresende/unidadeRedes/blob/main/aplicacaoTCP.pdf, com o arquivo aplicacaoTCP.pdf que vai demostrar o passo a passo da execução da atividade.
