@@ -73,9 +73,7 @@ while True:
             field_handler = request.split('\r\n')[3]
             field = field_handler.split(': ')[0]
             url = field_handler.split(' ')[1]
-            #print(field_handler)
-            #print(field)
-            #print(url)
+            
             if not url:
                 size_err = os.path.getsize('./error.html')
                 try:
@@ -105,19 +103,19 @@ while True:
                 soup = BeautifulSoup(data, features="html.parser")
 
                 elif field == "URL_Busca":
-                    busca_palavra = field_handler.split(' ')[2]
-                    pal= "----{}----".format(busca_palavra)
-                    #print("----{}----".format(busca_palavra))
-                    response += pal+'\n'
-                    matches = soup.find_all(string=re.compile(busca_palavra))
-                    count = 0
-                    for nome in matches:
-                        #print(nome)
-                        response += nome+'\n'
-                        count = count + 1
-                    occ = "\n-- NUMERO DE OCORRENCIAS {}--".format(count)
-                    #print("\n-- NUMERO DE OCORRENCIAS {}--".format(count))
-                    response += occ+'\n'
+                busca_palavra = field_handler.split(' ')[2]
+                pal= "----{}----".format(busca_palavra)
+                
+                response += pal+'\n'
+                matches = soup.find_all(string=re.compile(busca_palavra))
+                count = 0
+                for nome in matches:
+                #print(nome)
+                    response += nome+'\n'
+                    count = count + 1
+                occ = "\n-- NUMERO DE OCORRENCIAS {}--".format(count)
+                
+                response += occ+'\n'
                     
                 
         encoded = bytes(response, "utf-8")
