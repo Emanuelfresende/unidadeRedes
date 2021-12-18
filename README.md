@@ -50,7 +50,7 @@ _campos devem seguir padrão NOME_DO_CAMPO: VALORES_
 
 > ACCEPT-LANGUAGE: *
 
-> URL-FIELD: <URL>
+> URL_Buscador: <URL> <PALAVRA>
 
 ### Quais os possíveis valores de cada campo?
 apresentado em detalhes acima
@@ -59,7 +59,7 @@ apresentado em detalhes acima
 ## Como a aplicação pode ser testada no Core?
 
 _Descreva como o servidor pode ser implantado e testado, apresentando um manual de uso_ 
-> Uma aplicação simples, os arquivos TCPserver.py e TCPclient.py são adicionados, sendo executados em suas redes com o comando python3. QUando a conexão se inicia, o cliente faz as solicitações do url do departamento, ou caso queira, qualquer outro link, e escolher a palavra que quer fazer a busca. O servidor encontrará e imprimirá a resposta em tela.
+> Uma aplicação simples, os arquivos serverfinal.py e clientfinal.py são adicionados, sendo executados em suas redes com o comando python3. QUando a conexão se inicia, o cliente faz as solicitações do url do departamento, ou caso queira, qualquer outro link, e escolher a palavra que quer fazer a busca. O servidor encontrará e imprimirá a resposta em tela.
 
 ## Faça um registro do funcionamento de sua aplicação 
 _Apresente um exemplo de teste mostrando que o cliente e o servior  HTTP Tupi funcionou corretamente_
