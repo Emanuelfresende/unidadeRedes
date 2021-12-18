@@ -102,7 +102,7 @@ while True:
                 data = page.text
                 soup = BeautifulSoup(data, features="html.parser")
 
-                elif field == "URL_Busca":
+                
                 busca_palavra = field_handler.split(' ')[2]
                 pal= "----{}----".format(busca_palavra)
                 
