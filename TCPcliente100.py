@@ -11,16 +11,16 @@ file_name = ''
 url = ''
 
 while True:
-    print('Informe o protocolo HTTP (1 para 1.1 ou t para Tupi): ')
+    print('Informe o protocolo HTTP (1 para 1.1 ou 2 para Tupi): ')
     prot = input()
     if prot == "1":
         print('Informe o nome do arquivo: ')
         file_name = input()
-    elif prot == "t":
+    elif prot == "2":
         print('Informe a URL: ')
         url = input()
     else:
-        print('Foi mal')
+        print('Procotolo nao identificado')
         sys.exit(1)
 
 
@@ -34,14 +34,14 @@ while True:
         response = tcp.recv(buff_size).decode("utf-8")
         print("received response:\n", response)
 
-    if prot == "t":
+    if prot == "2":
         if url == '':
-            url = "https://ccsa.ufs.br/pagina/20168-departamento-de-ciencia-da-informacao"
+            url = "https://ccsa.ufs.br/pagina/20147-departamento-de-relacoes-internacionais"
         request = 'GET / HTTP/Tupi\r\n'
         request += 'Host: ufs.client.br\r\n'
         request += 'Accept-Language: *\r\n'
         elif opt == "c":
-            print('Informe o nome a ser buscado')
+            print('Informe a palavra a ser buscada')
             pal = input()
             request += 'URL_Busca: {} {}\r\n'.format(url, pal)
      
