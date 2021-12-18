@@ -40,10 +40,10 @@ while True:
         request = 'GET / HTTP/Tupi\r\n'
         request += 'Host: ufs.client.br\r\n'
         request += 'Accept-Language: *\r\n'
-        elif opt == "c":
-            print('Informe a palavra a ser buscada')
-            pal = input()
-            request += 'URL_Busca: {} {}\r\n'.format(url, pal)
+        
+        print('Informe a palavra a ser buscada')
+        pal = input()
+        request += 'URL_Busca: {} {}\r\n'.format(url, pal)
      
         print("sending request: \n", request)
         tcp.send(bytes(request, "utf-8"));
